@@ -12,4 +12,4 @@
 - 🌱 I’m currently learning LLM/VLM fine tuning
 - 📫 How to reach me: q2205773452@163.com / xztszy@gmail.com
 
-![](https://raw.githubusercontent.com/SolitudeZY/SolitudeZY/main/assets/github-contribution-grid-snake.svg)
+![snake](https://raw.githubusercontent.com/SolitudeZY/SolitudeZY/main/assets/github-contribution-grid-snake.svg)
