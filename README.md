@@ -9,6 +9,6 @@
 - ⚡ Fun fact: ...
 -->
 - 🔭 I’m currently working on Crack segment by using U<sup>2</sup>Net
-- 🌱 I’m currently learning LLM/VLM fine tuning and PPE detection from the perspective of drones
+- 🌱 I’m currently learning LLM/VLM fine-tuning and PPE detection from the perspective of drones
 - 📫 How to reach me: q2205773452@163.com / xztszy@gmail.com
 ![My GitHub Game](game.gif)
