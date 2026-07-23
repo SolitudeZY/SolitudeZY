@@ -17,5 +17,7 @@
 
 I love sharing open-source software, so feel free to contact me if you need anything
 
-**I hope the path I've walked will be easier for those who come after me**
 **我希望自己走过的路，后来的人能走的更轻松**
+
+**I hope the path I've walked will be easier for those who come after me**
+
