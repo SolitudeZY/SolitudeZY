@@ -43,7 +43,6 @@
 | [**QuickModel**](https://github.com/SolitudeZY/QuickModel) ⭐41 | 通用桌面 Agent：把便宜模型用在日常，把强模型留给硬活 |
 | [**OpinionLens**](https://github.com/SolitudeZY/OpinionLens) ⭐38 | 舆见：社媒舆情监测与 AI 报告桌面端（Electron + FastAPI + MediaCrawler） |
 | [**qwen_fine_tuning**](https://github.com/SolitudeZY/qwen_fine_tuning) | Qwen-VL 两阶段微调：先 grounding 再结构化 JSON，识别边防护/基坑围挡等违规场景 |
-| [**Free-Agent**](https://github.com/SolitudeZY/Free-Agent) | 基于 DeepAgent 的 Web 端文档生成：标书撰写、自动化报表 |
 | [**qwen-redetect**](https://github.com/SolitudeZY/qwen-redetect) | Qwen-VL 视频/图像识别复核服务，Go API + 内置 Web 复核台 |
 
 ### 平台与工具
@@ -71,7 +70,7 @@
 
 ## 📊 一点数据
 
-- **24** 个原创仓库（不含 fork）
+- **23** 个公开原创仓库（不含 fork）
 - [**QuickModel**](https://github.com/SolitudeZY/QuickModel) **41★** 与 [**OpinionLens**](https://github.com/SolitudeZY/OpinionLens) **38★**，是目前关注度最高的两个仓库
 - **4** 类视觉任务在端侧跑通过：目标检测、语义分割、旋转框（OBB）、跨帧追踪
 - **1** 条完整链路：`数据准备 → 训练 → ONNX → INT8 量化 → 拆头 → RK3576 推理 → 告警上报`
