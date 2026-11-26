@@ -4,6 +4,11 @@
 
 智能科学与技术 · 计算机视觉 / 边缘端部署 / 多模态大模型应用
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
 我做的东西大多指向同一件事：**把"看得懂"的模型，塞进"用得起"的设备里。** 从数据准备、训练、量化、拆头，到板端拉流推理和告警上报，这条链路我自己走通，也自己在工地上被它坑过。
 
 ---
@@ -26,7 +31,7 @@
 | 项目 | 说明 |
 | --- | --- |
 | [**UAV_cone**](https://github.com/SolitudeZY/UAV_cone) | 无人机视角的交通导改锥桶检测：YOLOv8s-OBB 三分类 + MobileNetV3 候选审核，输出锥桶**移位 / 缺失 / 倒伏**告警 |
-| [**landslide-detect**](https://github.com/SolitudeZY/landslide-detect) | 滑坡检测与跨帧追踪，YOLOv8 检测 + 时序投票抑制误报，含 RK3576 端侧部署链路 |
+| [**landslide-detect**](https://github.com/SolitudeZY/landslide-detect) | 滑坡检测与跨帧追踪，YOLOv8 检测 + 时序迟滞抑制误报，含 RK3576 端侧部署链路 |
 | [**rk3576-edge-platform**](https://github.com/SolitudeZY/rk3576-edge-platform) | 板端平台：RTSP 拉流 → RKNN INT8 推理 → YOLO 拆头后处理 → 推流与预览 |
 | [**CrackNet**](https://github.com/SolitudeZY/CrackNet) | 桥梁裂缝语义分割：DeepLab + ResNet101 与 U²-Net 双路线，含裂缝宽度量测 |
 | [**PPE_Drone**](https://github.com/SolitudeZY/PPE_Drone) | 无人机视角的防护装备识别，YOLO / RT-DETR 对比 |
@@ -55,41 +60,20 @@
 
 ## 🛠 技术栈
 
-**模型与训练**
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![Ultralytics](https://img.shields.io/badge/Ultralytics_YOLO-111F68?style=flat-square)
-![RT-DETR](https://img.shields.io/badge/RT--DETR-4B8BBE?style=flat-square)
-![DeepLab](https://img.shields.io/badge/DeepLabv3+-3776AB?style=flat-square)
-![U2Net](https://img.shields.io/badge/U%C2%B2--Net-6A5ACD?style=flat-square)
-
-**端侧部署**
-![RKNN](https://img.shields.io/badge/RKNN--Toolkit2-0F9D58?style=flat-square)
-![RK3576](https://img.shields.io/badge/RK3576-FF6F00?style=flat-square)
-![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
-![INT8](https://img.shields.io/badge/INT8_Quantization-8E44AD?style=flat-square)
-![RTSP](https://img.shields.io/badge/RTSP%20%2F%20MediaMTX-1E88E5?style=flat-square)
-
-**大模型**
-![Qwen](https://img.shields.io/badge/Qwen--VL-615CED?style=flat-square)
-![LoRA](https://img.shields.io/badge/LoRA%20%2F%20DeepSpeed-FFB000?style=flat-square)
-![flash-attn](https://img.shields.io/badge/flash--attn-2E7D32?style=flat-square)
-
-**工程**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)
-![Tauri](https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white)
+| 层次 | 用到的技术 |
+| --- | --- |
+| **模型与训练** | PyTorch · Ultralytics YOLO · RT-DETR · DeepLabv3+ · U²-Net · MobileNetV3 |
+| **端侧部署** | RKNN-Toolkit2 · RK3576 · ONNX · INT8 量化 · RTSP / MediaMTX |
+| **大模型** | Qwen-VL · LoRA / DeepSpeed · flash-attn |
+| **工程** | Python · Go · Rust · FastAPI · Svelte · Electron · Tauri · Docker · MQTT |
 
 ---
 
 ## 📊 一点数据
 
-- **24** 个原创仓库，**2** 个项目的星标已经能说明问题（QuickModel **41★**、OpinionLens **38★**）
-- **4** 类视觉任务跑通过端侧：检测、分割、OBB、跨帧追踪
+- **24** 个原创仓库（不含 fork）
+- [**QuickModel**](https://github.com/SolitudeZY/QuickModel) **41★** 与 [**OpinionLens**](https://github.com/SolitudeZY/OpinionLens) **38★**，是目前关注度最高的两个仓库
+- **4** 类视觉任务在端侧跑通过：目标检测、语义分割、旋转框（OBB）、跨帧追踪
 - **1** 条完整链路：`数据准备 → 训练 → ONNX → INT8 量化 → 拆头 → RK3576 推理 → 告警上报`
 
 ---
